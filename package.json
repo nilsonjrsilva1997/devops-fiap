@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-docker-kubernetes",
+  "version": "1.0.0",
+  "description": "Aplicação simples Node.js com Docker e Kubernetes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": ["nodejs", "docker", "kubernetes"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

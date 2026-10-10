@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker & Kubernetes - Meu Primeiro Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Docker & Kubernetes</h1>
+        <p class="subtitle">Seu primeiro projeto para aprender</p>
+        
+        <div class="card">
+            <h2>Comunicação com Backend</h2>
+            <button id="btnMensagem" onclick="buscarMensagem()">
+                Clique para chamar API
+            </button>
+            
+            <div id="resposta" class="resposta">
+                <p>Aguardando...</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>Informações</h3>
+            <ul>
+                <li>Backend: Node.js + Express</li>
+                <li>Frontend: HTML + CSS + JavaScript</li>
+                <li>Container: Docker</li>
+                <li>Orquestração: Kubernetes</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

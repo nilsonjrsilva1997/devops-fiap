@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.card {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#btnMensagem {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: bold;
+}
+
+#btnMensagem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+#btnMensagem:active {
+    transform: translateY(0);
+}
+
+.resposta {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resposta p {
+    color: #333;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.resposta.sucesso {
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+}
+
+.resposta.sucesso p {
+    color: #2e7d32;
+}
+
+.resposta.erro {
+    background: #ffebee;
+    border-left: 4px solid #f44336;
+}
+
+.resposta.erro p {
+    color: #c62828;
+}
+
+.info {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    border-left: 4px solid #2196f3;
+}
+
+.info h3 {
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info li {
+    color: #1565c0;
+    padding: 8px 0;
+    font-size: 1em;
+}
+
+.info li:before {
+    content: "✓ ";
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.loading {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #667eea;
+    border-radius: 50%;
+    animation: blink 1.4s infinite;
+}
+
+.loading:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0%, 60%, 100% {
+        opacity: 0.3;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    #btnMensagem {
+        width: 100%;
+    }
+}
